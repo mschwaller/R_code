@@ -1,7 +1,7 @@
 # this script plots the petrel guano spectra
 
 # read in the guano spectra
-guano_spectra <- read.csv(file="//Users/mschwall/!Essentials/penguin_stuff/petrel_spectra/petrel_reflectance_measurements/R01..txt", header=FALSE, sep=",", skip=0)
+guano_spectra <- read.csv(file="/Users/mschwall/!Essentials/penguin_stuff/petrel_spectra/petrel_reflectance_measurements/R01..txt", header=FALSE, sep=",", skip=0)
 
 # put the guano spectra into a matrix
 guano_spectra_matrix <- as.matrix(guano_spectra)
