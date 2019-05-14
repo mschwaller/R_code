@@ -11,13 +11,13 @@ p_title <- "Cape Adare"
 my_lat <- -71.3  # latitude and longitude of the point of interest
 my_lon <- 170.2
 
-p_title <- "Cape Bird North"
-my_lat <- -77.27  # latitude and longitude of the point of interest
-my_lon <- 166.45
+#p_title <- "Cape Bird North"
+#my_lat <- -77.27  # latitude and longitude of the point of interest
+#my_lon <- 166.45
 
-p_title <- "Cape Crozier"
-my_lat <- -77.45  # latitude and longitude of the point of interest
-my_lon <- 169.25
+#p_title <- "Cape Crozier"
+#my_lat <- -77.45  # latitude and longitude of the point of interest
+#my_lon <- 169.25
 
 lat_min <- round(my_lat) - 3.0
 lat_max <- round(my_lat) + 3.0
@@ -59,8 +59,9 @@ axis(2)
 
 # by looking at the map it is apparent that the tile 38_21 covers Possession Is
 # to find the url for this tile
-url_array <- levels(rema_tiles$fileurl) # levels turns the Factor rema_tiles$fileurl into a vector of urls
-possession_url <- url_array[grep("38_21", url_array)]
-print(paste("REMA tile covering ", p_title,": ", possession_url, sep=""))
+# url_array <- levels(rema_tiles$fileurl) # levels turns the Factor rema_tiles$fileurl into a vector of urls
+# possession_url <- url_array[grep("38_21", url_array)]
+# print(paste("REMA tile covering ", p_title,": ", possession_url, sep=""))
+
 print("DONE!")
 

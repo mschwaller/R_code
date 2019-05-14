@@ -1,0 +1,6 @@
+r <- raster(ncol=10, nrow=10)
+values(r) <- sample(0:1, ncell(r), replace=TRUE)
+ctab <- c(0,1)
+colortable(r) <- c(c("#00000000", "#397D0299"), rep("#00000000", 254), sep=",")
+plot(r)
+head(colortable(r)) 
